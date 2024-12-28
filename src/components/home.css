@@ -132,13 +132,12 @@
   .carousel-item {
     height: 60vh; /* Adjust the height of the carousel items */
   }
-
-  .animated-word {
-    font-size: 1rem !important; /* Reduce font size of the title for tablets */
-     /* Adjust spacing */
+  .animated-title{
+    font-size: 1rem !important
   }
 
-  .slide-description {
+
+  .animated-description {
     font-size: 0.5rem !important; /* Reduce font size of the description for tablets */
     line-height: 1.4; /* Adjust line height */
   }
@@ -158,13 +157,13 @@
     height: 50vh; /* Adjust the height of the carousel items */
   }
 
-  .slide-title {
+  .animated-title {
     font-size: 1.4 !important; /* Further reduce font size for small screens */
     margin-bottom: 10px; /* Adjust spacing */
   }
 
-  .animated-word {
-    font-size: 0.8rem; /* Further reduce font size of the description for small screens */
+  .animated-description {
+    font-size: 0.8rem !important; /* Further reduce font size of the description for small screens */
  /* Adjust line height */
   }
 

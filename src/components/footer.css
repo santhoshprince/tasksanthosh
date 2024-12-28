@@ -103,3 +103,14 @@
     font-size: 12px; /* Smaller button font size */
   }
 }
+.social-links h3 {
+  font-size: 1rem;
+  color: var(--egg-white);
+  margin-bottom: 10px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: var(--egg-white);
+  margin-bottom: 5px;
+}

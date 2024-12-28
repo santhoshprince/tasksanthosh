@@ -15,7 +15,7 @@ const MarqueeComponent = () => {
   return (
     <div className="marquee-container">
       {/* Increase the speed to make the marquee faster */}
-      <Marquee gradient={false} speed={100}>
+      <Marquee gradient={true} speed={100} gradientColor='#0043F1'>
         {marqueeItems.map((item, index) => (
           <div className="marquee-item" key={index}>
             <div className="star-icon">

@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
             <p>Phone: 0044 79610087</p>
             <p>Landline: 0044 1480759133</p>
-            <p >Email: <a href="mailto:contact@praxengineering.net" className="text-white"><span style={{color:"#E6E6E3B3"}}>contact@praxengineering.net</span></a></p>
+            <p>Email: <a href="mailto:contact@praxengineering.net" className="text-white"><span style={{color:"#E6E6E3B3"}}>contact@praxengineering.net</span></a></p>
           </div>
 
           {/* Second Column */}
@@ -37,25 +37,31 @@ const Footer = () => {
             <h3>Contact Us</h3>
             <form>
               <div className="mb-3">
-                <input type="text" className="form-control" placeholder="Name" required />
+                <label htmlFor="name" className="form-label">Name</label>
+                <input id="name" type="text" className="form-control" placeholder="Enter your name" required />
               </div>
               <div className="mb-3">
-                <input type="email" className="form-control" placeholder="Email" required />
+                <label htmlFor="email" className="form-label">Email</label>
+                <input id="email" type="email" className="form-control" placeholder="Enter your email" required />
               </div>
               <div className="mb-3">
-                <textarea className="form-control" rows="3" placeholder="Message" required></textarea>
+                <label htmlFor="message" className="form-label">Message</label>
+                <textarea id="message" className="form-control" rows="3" placeholder="Write your message" required></textarea>
               </div>
               <button type="submit" className="btn btn-warning w-100">Submit</button>
             </form>
           </div>
         </div>
 
-        {/* Social Links */}
-        <div className="text-start my-3">
-          <a href="#facebook" className="text-warning mx-2"><FaFacebook /></a>
-          <a href="#twitter" className="text-warning mx-2"><FaTwitter /></a>
-          <a href="#instagram" className="text-warning mx-2"><FaInstagram /></a>
-          <a href="#linkedin" className="text-warning mx-2"><FaLinkedin /></a>
+        {/* Social Links Section */}
+        <div className="social-links my-4">
+          <h3>Social Links</h3>
+          <div className="text-start">
+            <a href="#facebook" className="text-warning mx-2"><FaFacebook /></a>
+            <a href="#twitter" className="text-warning mx-2"><FaTwitter /></a>
+            <a href="#instagram" className="text-warning mx-2"><FaInstagram /></a>
+            <a href="#linkedin" className="text-warning mx-2"><FaLinkedin /></a>
+          </div>
         </div>
 
         {/* Copyright */}

@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: 24px 0;
+    padding: 60px;
     font-family: "The Seasons Bold", "The Seasons Bold Placeholder", sans-serif;
 }
 
@@ -72,6 +72,9 @@
 
     .star-icon {
         font-size: 30px; /* Smaller star icon */
+    }
+    .marquee-container{
+        padding: 20px;
     }
 }
 
