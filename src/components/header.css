@@ -96,12 +96,12 @@
 
   /* Logo adjustments for smaller screens */
   .logo-img {
-    height: 50px; /* Adjust logo size */
+    height: 40px; /* Adjust logo size */
   }
 
   /* Navigation */
   .nav-links {
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: row; /* Stack links vertically */
     gap: 10px;
     margin-top: 10px; /* Add space between logo and links */
     display: none; /* Hide links by default for mobile */
@@ -109,7 +109,7 @@
 
   /* Contact Button adjustments */
   .contact-button {
-    justify-content: center;
+    justify-content: end;
     margin-top: 10px;
   }
 
