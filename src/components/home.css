@@ -136,10 +136,8 @@
     font-size: 1rem !important
   }
 
-
-  .animated-description {
-    font-size: 0.5rem !important; /* Reduce font size of the description for tablets */
-    line-height: 1.4; /* Adjust line height */
+  .animated-word{
+    font-size: 0.7rem !important;
   }
 
   .slick-prev,
@@ -162,9 +160,11 @@
     margin-bottom: 10px; /* Adjust spacing */
   }
 
-  .animated-description {
-    font-size: 0.8rem !important; /* Further reduce font size of the description for small screens */
- /* Adjust line height */
+  .animated-word{
+    font-size: 0.7rem !important;
+  }
+  .animated-description{
+    font-size: 0.5rem !important;
   }
 
   .slick-prev,
