@@ -130,10 +130,10 @@
     display: flex; /* Show links when active */
   }
   .nav-links a {
-    font-size: 13px;
+    font-size: 10px;
   }
   .header{
-    padding: 10px !important;
+    padding: 8px !important;
   }
 }
 
