@@ -1,0 +1,181 @@
+/* Primary Colors */
+:root {
+  --prax-blue: #0043F1;
+  --prax-yellow: #EEC643;
+  --black: #141414;
+
+  /* Secondary Colors */
+  --mid-black: #333333;
+  --background: #EFF0F2;
+  --egg-white: #E6E6E3;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Bold.ttf') format('woff2'),
+       url('../fonts/Inter_18pt-Bold.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Adjusted height to 80% of the viewport height */
+  overflow: hidden; /* Ensures that any overflow content is hidden */
+}
+
+.carousel-item {
+  position: relative;
+  height: 80vh; /* Set the same height as the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Background video styling */
+.video-background {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  z-index: -1; /* Ensure the video stays behind content */
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important; /* Ensures the video fills the container */
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensures that the video stays behind the text */
+  transform: none !important; /* Ensure no scaling or movement applied */
+}
+
+/* Content for each carousel item */
+.carousel-content {
+  text-align: center;
+  color: white;
+  z-index: 1; /* Ensures the text appears above the video */
+  padding: 20px;
+  white-space: normal; /* Prevents text from wrapping */
+  will-change: transform, opacity; /* Optimizing for smoother animation */
+  animation: slide-in-left 5s linear !important; /* Continuously animating text */
+  pointer-events: none;
+}
+
+.slide-title {
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+}
+
+/* Title styling */
+.slide-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Description styling */
+.slide-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 80%;
+  margin: 0 auto;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+/* Custom arrows */
+.slick-prev,
+.slick-next {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+.slick-next {
+  right: 20px;
+}
+
+/* Custom Arrow Icon */
+.replay-arrow {
+  font-size: 30px;
+}
+
+/* Responsive Design - Mobile & Tablet */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 60vh; /* Reduce height on smaller screens */
+  }
+
+  .carousel-item {
+    height: 60vh; /* Adjust the height of the carousel items */
+  }
+
+  .animated-title {
+    font-size: 1rem !important; /* Reduce font size of the title for tablets */
+    margin-bottom: 15px; /* Adjust spacing */
+  }
+
+  .slide-description {
+    font-size: 0.5rem !important; /* Reduce font size of the description for tablets */
+    line-height: 1.4; /* Adjust line height */
+  }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 24px; /* Adjust the arrow size */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 50vh; /* Further reduce height on very small screens */
+  }
+
+  .carousel-item {
+    height: 50vh; /* Adjust the height of the carousel items */
+  }
+
+  .slide-title {
+    font-size: 1.4 !important; /* Further reduce font size for small screens */
+    margin-bottom: 10px; /* Adjust spacing */
+  }
+
+  .slide-description {
+    font-size: 0.8rem; /* Further reduce font size of the description for small screens */
+    line-height: 1.3; /* Adjust line height */
+  }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 20px; /* Smaller arrow size on mobile */
+  }
+}
+
+/* Adding animation effects */
+.animated-word {
+  display: inline-block;
+  font-size: 1.5rem; /* Adjust size as per your design */
+  color: #fff; /* White color for text */
+  font-weight: lighter;
+  margin-right: 5px; /* Adds space between words */
+}

@@ -1,0 +1,105 @@
+:root {
+  /* Primary Colors */
+  --prax-blue: #0043F1;
+  --prax-yellow: #EEC643;
+  --black: #141414;
+
+  /* Secondary Colors */
+  --mid-black: #333333;
+  --background: #EFF0F2;
+  --egg-white: #E6E6E3;
+}
+
+.footer {
+  background-color: var(--black); /* Footer with black background */
+  color: var(--egg-white); /* Footer text color */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow the footer content to wrap */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer a {
+  color: var(--egg-white); /* Default link color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: var(--prax-yellow); /* Gold color on hover */
+}
+
+.btn-warning {
+  background-color: var(--prax-blue) !important;
+  border: none;
+  color: var(--egg-white);
+}
+
+.btn-warning:hover {
+  background-color: #e5b836; /* Slightly darker gold */
+  color: var(--egg-white);
+}
+
+.text-warning {
+  color: var(--prax-blue) !important;
+  font-size: 30px;
+}
+
+.first-sec p {
+  color: #E6E6E3B3 !important;
+}
+
+.list-unstyled li {
+  margin-bottom: 20px !important;
+}
+
+/* Responsive Design for Footer */
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 10px; /* Adjust padding for tablets */
+    flex-direction: column; /* Stack the footer content vertically */
+    text-align: center;
+  }
+
+  .footer a {
+    font-size: 1rem; /* Adjust link font size */
+  }
+
+  .text-warning {
+    font-size: 24px; /* Smaller font size for text-warning */
+  }
+
+  .list-unstyled li {
+    margin-bottom: 15px; /* Adjust list item spacing */
+  }
+
+  .btn-warning {
+    font-size: 14px; /* Adjust button size for mobile/tablets */
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 5px; /* Reduce padding for mobile */
+  }
+
+  .footer a {
+    font-size: 0.9rem; /* Further reduce link font size */
+  }
+
+  .text-warning {
+    font-size: 20px; /* Further reduce text-warning font size */
+  }
+
+  .list-unstyled li {
+    margin-bottom: 10px; /* Tighter list item spacing */
+  }
+
+  .btn-warning {
+    font-size: 12px; /* Smaller button font size */
+  }
+}

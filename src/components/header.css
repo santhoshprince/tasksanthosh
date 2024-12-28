@@ -1,0 +1,141 @@
+:root {
+  /* Primary Colors */
+  --prax-blue: #0043F1;
+  --prax-yellow: #EEC643;
+  --black: #141414;
+
+  /* Secondary Colors */
+  --mid-black: #333333;
+  --background: #EFF0F2;
+  --egg-white: #E6E6E3;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Light.ttf') format('woff2'),
+       url('../fonts/Inter_18pt-Light.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background-color: var(--background) !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ /* Logo Section */
+.logo {
+  flex: 1;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+/* Navigation Links */
+.nav {
+  /* flex: 3; */
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--black) !important;
+  font-size: 16px;
+  font-weight: 500 !important;
+}
+
+.nav-links a:hover {
+  color: var(--prax-blue) !important;
+}
+
+/* Contact Button */
+.contact-button {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-button .btn {
+  font-size: 16px;
+  width: 100px !important;
+  height: 43px;
+  color: var(--egg-white) !important;
+  background-color: var(--prax-blue) !important;
+  white-space: nowrap;
+}
+
+.header-btn {
+  border-radius: 0px !important;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  /* Logo adjustments for smaller screens */
+  .logo-img {
+    height: 50px; /* Adjust logo size */
+  }
+
+  /* Navigation */
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px;
+    margin-top: 10px; /* Add space between logo and links */
+    display: none; /* Hide links by default for mobile */
+  }
+
+  /* Contact Button adjustments */
+  .contact-button {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .contact-button .btn {
+    width: 120px; /* Adjust button size */
+  }
+
+  /* Hamburger Menu */
+  .hamburger {
+    display: block; /* Show hamburger menu */
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when active */
+  }
+}
+
+/* Tablet responsiveness (larger screens) */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: row; /* Keep header items in a row */
+  }
+
+  .nav-links {
+    display: flex;
+  }
+}

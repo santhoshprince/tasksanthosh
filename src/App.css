@@ -1,0 +1,40 @@
+:root {
+  /* Primary Colors */
+  --prax-blue: #0043F1;
+  --prax-yellow: #EEC643;
+  --black: #141414;
+
+  /* Secondary Colors */
+  --mid-black: #333333;
+  --background: #EFF0F2;
+  --egg-white: #E6E6E3;
+}
+
+
+
+.footer {
+  background-color: var(--prax-blue); /* Footer with black background */
+  color: var(--egg-white); /* Footer text color */
+  padding: 20px;
+}
+
+.footer a {
+  color: var(--egg-white); /* Default link color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: var(--prax-yellow); /* Gold color on hover */
+}
+
+.btn-warning {
+  background-color: var(--prax-yellow);
+  border: none;
+  color: var(--black);
+}
+
+.btn-warning:hover {
+  background-color: #e5b836; /* Slightly darker gold */
+  color: var(--egg-white);
+}

@@ -1,0 +1,92 @@
+:root {
+  /* Primary Colors */
+  --prax-blue: #0043F1;
+  --prax-yellow: #EEC643;
+  --black: #141414;
+
+  /* Secondary Colors */
+  --mid-black: #333333;
+  --background: #EFF0F2;
+  --egg-white: #E6E6E3;
+}
+
+@font-face {
+  font-family: "The Seasons Bold";
+  src: url("../fonts/Fontspring-DEMO-theseasons-bd.otf") format("woff2"),
+       url("../fonts/Fontspring-DEMO-theseasons-bd.otf") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "The Seasons Bold Placeholder";
+  src: url("../fonts/Fontspring-DEMO-theseasons-bdit.otf") format("woff2"),
+       url("../fonts/Fontspring-DEMO-theseasons-bdit.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.marquee-container {
+    width: 100%;
+    height: 80px;
+    background-color: var(--prax-blue) !important;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 24px 0;
+    font-family: "The Seasons Bold", "The Seasons Bold Placeholder", sans-serif;
+}
+
+.marquee-item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.star-icon {
+    font-size: 35px;
+    margin-right: 20px;
+    color: var(--prax-yellow) !important; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.star-icon:hover {
+    transform: scale(1.3);
+}
+
+.marquee-text {
+    font-size: 1.5rem;
+    color: var(--egg-white) !important;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Responsive Design for smaller screens */
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .marquee-text h1 {
+        font-size: 1.2rem !important; /* Smaller font size for tablets */
+    }
+
+    .star-icon {
+        font-size: 30px; /* Smaller star icon */
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .marquee-text h1 {
+        font-size: 1rem !important; /* Even smaller font size for mobile */
+    }
+
+    .star-icon {
+        font-size: 25px; /* Smaller star icon for mobile */
+    }
+
+    .marquee-container {
+        height: 60px; /* Reduce the height of the marquee container on mobile */
+        padding: 16px 0; /* Adjust padding for mobile */
+    }
+}
