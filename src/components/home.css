@@ -24,6 +24,9 @@
   height: 80vh; /* Adjusted height to 80% of the viewport height */
   overflow: hidden; /* Ensures that any overflow content is hidden */
 }
+.animated-title{
+  font-size: 72px;
+}
 
 .carousel-item {
   position: relative;
@@ -74,7 +77,7 @@
 
 /* Title styling */
 .slide-title {
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 1.5;
