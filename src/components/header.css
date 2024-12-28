@@ -102,7 +102,7 @@
   /* Navigation */
   .nav-links {
     flex-direction: row; /* Stack links vertically */
-    gap: 10px;
+    gap: 36px;
     margin-top: 10px; /* Add space between logo and links */
     display: none; /* Hide links by default for mobile */
   }
@@ -111,6 +111,7 @@
   .contact-button {
     justify-content: end;
     margin-top: 10px;
+    display: none;
   }
 
   .contact-button .btn {
