@@ -65,6 +65,29 @@
 
 .nav-links a:hover {
   color: var(--prax-blue) !important;
+
+}
+.nav-links a {
+  position: relative; /* Required for the pseudo-element */
+  color: inherit; /* Ensures text color inherits the default color */
+  text-decoration: none; /* Removes default underline */
+}
+.nav-links a::after {
+  content: ""; /* Creates the underline */
+  position: absolute;
+  bottom: 0; /* Position it under the text */
+  left: 0;
+  width: 0%; /* Start with no underline */
+  height: 2px; /* Thickness of the underline */
+  background-color: var(--prax-blue); /* Blue color for the underline */
+  transition: width 0.5s ease; /* Smooth animation */
+}
+.nav-links a:hover::after {
+  width: 100%; /* Expand underline to full width on hover */
+}
+
+.nav-links a:hover {
+  color: var(--prax-blue); /* Change text color to blue */
 }
 
 /* Contact Button */
@@ -81,6 +104,7 @@
   color: var(--egg-white) !important;
   background-color: var(--prax-blue) !important;
   white-space: nowrap;
+  border-radius:0px;
 }
 
 .header-btn {

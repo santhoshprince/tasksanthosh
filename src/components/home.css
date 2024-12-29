@@ -108,7 +108,12 @@
   font-size: 30px;
   color: white;
   cursor: pointer;
+  width: 30px;
+  
+  
 }
+
+
 
 .slick-prev {
   left: 20px;
@@ -121,6 +126,11 @@
 /* Custom Arrow Icon */
 .replay-arrow {
   font-size: 30px;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 40px;
+  /* color: rgba(0, 0, 0, 0.5); */
+  
 }
 
 /* Responsive Design - Mobile & Tablet */
@@ -143,6 +153,15 @@
   .slick-prev,
   .slick-next {
     font-size: 24px; /* Adjust the arrow size */
+  }
+  .slick-prev{
+    left: 6px;
+  }
+  .slick-next{
+    right: 6px;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 20px;
   }
 }
 
@@ -169,8 +188,20 @@
 
   .slick-prev,
   .slick-next {
-    font-size: 20px; /* Smaller arrow size on mobile */
+    font-size: 20px;
+  
+     /* Smaller arrow size on mobile */
   }
+  .slick-prev{
+    left: 6px;
+  }
+  .slick-next{
+    right: 6px;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 20px;
+  }
+
 }
 
 /* Adding animation effects */

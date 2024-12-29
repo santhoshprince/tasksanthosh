@@ -13,7 +13,7 @@
 .footer {
   background-color: var(--black); /* Footer with black background */
   color: var(--egg-white); /* Footer text color */
-  padding: 20px;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap; /* Allow the footer content to wrap */
   justify-content: space-between;
@@ -33,7 +33,7 @@
 .btn-warning {
   background-color: var(--prax-blue) !important;
   border: none;
-  color: var(--egg-white);
+  color: var(--background);
 }
 
 .btn-warning:hover {
@@ -102,15 +102,70 @@
   .btn-warning {
     font-size: 12px; /* Smaller button font size */
   }
+  .res-text{
+    text-align: center !important;
+  }
 }
 .social-links h3 {
   font-size: 1rem;
-  color: var(--egg-white);
+  color: rgba(230, 230, 227, 0.7);
   margin-bottom: 10px;
 }
 
 .form-label {
-  font-weight: bold;
-  color: var(--egg-white);
-  margin-bottom: 5px;
+    color: var(--egg-white);
+    margin-bottom: 15px;
+}
+
+
+
+/* Useful Links hover animation */
+.list-unstyled a {
+  position: relative; /* Required for the pseudo-element */
+  color: var(--egg-white); /* Default link color */
+  text-decoration: none; /* Removes default underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.list-unstyled a::after {
+  content: ""; /* Creates the underline */
+  position: absolute;
+  bottom: -2px; /* Adjusted position for underline */
+  left: 0;
+  width: 0%; /* Start with no underline */
+  height: 2px; /* Thickness of the underline */
+  background-color: var(--prax-blue); /* Gold color for the underline */
+  transition: width 0.3s ease; /* Smooth width animation */
+}
+
+.list-unstyled a:hover::after {
+  width: 100%; /* Expand underline to full width on hover */
+}
+
+.list-unstyled a:hover {
+  color: var(--prax-blue); /* Change text color to gold on hover */
+}
+
+
+.form-control {
+  background-color: var(--egg-white); /* Set background to egg-white */
+  color: var(--black); /* Ensure text color is readable */
+  border: 1px solid var(--mid-black); /* Add a subtle border */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  padding: 10px; /* Optional: Adjust padding for better spacing */
+}
+
+.form-control:focus {
+  outline: none; /* Remove default outline */
+  border-color: var(--prax-blue); /* Highlight border on focus */
+  box-shadow: 0 0 5px var(--prax-blue); /* Optional: Add glow effect */
+}
+.full-width-divider {
+  position: absolute; /* Position relative to the viewport */
+  left: 0; /* Start at the left edge */
+  right: 0; /* Extend to the right edge */
+  height: 2px; /* Line thickness */
+  background: var(--black); /* Gradient color */
+ /* No margin */
+  z-index: 10; /* Ensure it appears on top */
 }

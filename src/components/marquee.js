@@ -19,7 +19,8 @@ const MarqueeComponent = () => {
         {marqueeItems.map((item, index) => (
           <div className="marquee-item" key={index}>
             <div className="star-icon">
-              <FaStar />
+              {/* <FaStar /> */}
+              <img src="Star.png" />
             </div>
             <div className="marquee-text">
               <h1 style={{ fontSize: item.fontSize }}>{item.text}</h1>
