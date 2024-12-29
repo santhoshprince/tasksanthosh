@@ -79,6 +79,9 @@
   .btn-warning {
     font-size: 14px; /* Adjust button size for mobile/tablets */
   }
+  .res-text{
+    text-align: center !important;
+  }
 }
 
 /* Mobile (max-width: 480px) */
