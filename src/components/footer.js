@@ -115,19 +115,35 @@ const Footer = () => {
         <div className="social-links my-4">
           <h3 style={{color:"#E6E6E3"}}>Social Links</h3>
           <div className="text-start res-text">
-            <a href="#facebook" className="text-warning mx-2">
-              <img src="Facebook.png" alt="Facebook" width="30" height="30" />
-            </a>
-            <a href="#instagram" className="text-warning mx-2">
-              <img src="Instagram.png" alt="Instagram" width="30" height="30" />
-            </a>
-            <a href="#twitter" className="text-warning mx-2">
-              <img src="Twitter.png" alt="Twitter" width="30" height="30" />
-            </a>
+          <a href="#facebook" className="text-warning mx-2">
+  <img 
+    src="Facebook.png" 
+    alt="Facebook" 
+    style={{ width: "30px", height: "30px", objectFit: "contain" }} 
+  />
+</a>
+<a href="#twitter" className="text-warning mx-2">
+  <img 
+    src="Twitter.png" 
+    alt="Twitter" 
+    style={{ width: "30px", height: "30px", objectFit: "contain" }} 
+  />
+</a>
+<a href="#instagram" className="text-warning mx-2">
+  <img 
+    src="Instagram.png" 
+    alt="Instagram" 
+    style={{ width: "30px", height: "30px", objectFit: "contain" }} 
+  />
+</a>
+<a href="#linkedin" className="text-warning mx-2">
+  <img 
+    src="LinkedIn.png" 
+    alt="LinkedIn" 
+    style={{ width: "30px", height: "30px", objectFit: "contain" }} 
+  />
+</a>
 
-            <a href="#linkedin" className="text-warning mx-2">
-              <img src="Linkedin.png" alt="LinkedIn" width="30" height="30" />
-            </a>
           </div>
         </div>
 
