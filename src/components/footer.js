@@ -151,7 +151,7 @@ const Footer = () => {
         <div className="full-width-divider"></div>
         <p className="text-center" style={{ paddingTop: "10px" }}>
           © 2024 Copyright{" "}
-          <span style={{ color: "#EEC643" }}>Prax Engineering</span>. All Rights
+          <span style={{ color: "#EEC643" ,fontWeight:"Bold"}}>Prax Engineering</span>. All Rights
           Reserved.
         </p>
       </div>

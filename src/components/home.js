@@ -13,37 +13,27 @@ const slides = [
   {
     id: 1,
     title: "Delivering Stellar Precision Engineering Innovative Engineering",
-    description: "We provide cutting-edge solutions to enhance your business performance.",
+    description: "You’re A1 Partner in Engineering Excellence Unleashing the Power of Precision Engineering for Your Business",
   },
   {
     id: 2,
     title: "Transforming Visions into Reality with Cutting-Edge Engineering",
-    description: "Our team turns creative ideas into tangible results with advanced engineering.",
+    description: "Redefining Possibilities Through Precision and Innovation. Your Trusted Partner for Advanced Engineering Solutions",
   },
   {
     id: 3,
     title: "Elevating Your Business with Innovative Engineering",
-    description: "Innovative approaches that help businesses grow and succeed in a competitive market.",
+    description: "Bridging Creativity and Functionality. Discover Tailored Engineering Solutions for Every Challenge",
   },
   {
     id: 4,
     title: "Crafting Excellence Through Engineering Mastery",
-    description: "Mastering the art of engineering to deliver unmatched quality and precision.",
+    description: "Turning Complex Ideas into Seamless Solutions. Precision Engineering Built for Tomorrow’s Needs",
   },
   {
     id: 5,
     title: "Empowering Progress with High-Performance Engineering",
-    description: "Empowering businesses to move forward with high-performance engineering solutions.",
-  },
-  {
-    id: 6,
-    title: "Transforming Visions into Reality with Cutting-Edge Engineering",
-    description: "Bringing your ideas to life with state-of-the-art engineering technologies.",
-  },
-  {
-    id: 7,
-    title: "Crafting Excellence Through Engineering Mastery",
-    description: "Engineering excellence that sets the standard for the industry.",
+    description: "Driving Success Through Expertise and Technology. Engineering Solutions That Propel Growth and Efficiency",
   },
 ];
 

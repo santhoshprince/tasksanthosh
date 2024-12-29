@@ -143,7 +143,7 @@
     height: 60vh; /* Adjust the height of the carousel items */
   }
   .animated-title{
-    font-size: 1rem !important
+    font-size: 1.5rem !important
   }
 
   .animated-word{
@@ -175,7 +175,7 @@
   }
 
   .animated-title {
-    font-size: 1.4 !important; /* Further reduce font size for small screens */
+    font-size: 1.5rem !important; /* Further reduce font size for small screens */
     margin-bottom: 10px; /* Adjust spacing */
   }
 
@@ -212,3 +212,4 @@
   font-weight: lighter;
   margin-right: 5px; /* Adds space between words */
 }
+
