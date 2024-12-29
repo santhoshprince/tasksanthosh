@@ -1,12 +1,16 @@
 import React from 'react';
 import './header.css';
+import {Link} from "react-router-dom"
 
 const Header = () => {
   return (
     <header className="header">
       {/* Logo Section */}
       <div className="logo">
+        <Link to="/">
         <img src="Logo.png" alt="Logo" className="logo-img" />
+        </Link>
+       
       </div>
 
       {/* Navigation Links */}
