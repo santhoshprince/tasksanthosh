@@ -1,13 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
-import { motion } from "framer-motion"; // Importing motion from framer-motion
-import "./home.css"; // Ensure your CSS is imported
-import "slick-carousel/slick/slick.css"; // Slick carousel styles
-import "slick-carousel/slick/slick-theme.css"; // Slick theme styles
+import { motion } from "framer-motion"; 
+import "./home.css"; 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css"; 
 import MarqueeComponent from "../components/marquee";
 
-// Common video source for all slides
-const commonVideoSrc = "herovideo.mp4"; // Replace with your video path
+const commonVideoSrc = "herovideo.mp4"; 
 
 const slides = [
   {
@@ -47,20 +46,20 @@ const CarouselWithTextAnimation = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true, // Enable arrows
-    pauseOnHover: false, // Ensures autoplay continues even when hovered
+    pauseOnHover: false, 
     prevArrow: (
       <button className="slick-prev">
-        <i className="fas fa-arrow-left replay-arrow"></i> {/* Replay icon */}
+        <i className="fas fa-arrow-left replay-arrow"></i>
       </button>
     ),
     nextArrow: (
       <button className="slick-next">
-        <i className="fas fa-arrow-right replay-arrow"></i> {/* Replay icon */}
+        <i className="fas fa-arrow-right replay-arrow"></i> 
       </button>
     ),
     responsive: [
       {
-        breakpoint: 1200, // Large screens (Desktops)
+        breakpoint: 1200, 
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -121,29 +120,28 @@ const CarouselWithTextAnimation = () => {
               <div className="container h-100 d-flex justify-content-center align-items-center">
                 <div className="carousel-content text-center">
                   <div>
-                    {/* Animate title with blur and light text effect */}
+                 
                     <motion.h1
                       initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                       animate={{
                         opacity: 1,
                         y: 0,
-                        filter: "blur(0px)", // Remove blur during animation
+                        filter: "blur(0px)", 
                       }}
-                      transition={{ duration: 1, delay: 0 }} // Title appears first
+                      transition={{ duration: 1, delay: 0 }} 
                       className="animated-title"
                     >
                       {slide.title}
                     </motion.h1>
 
-                    {/* Animate description word by word */}
                     <motion.p
                       initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                       animate={{
                         opacity: 1,
                         y: 0,
-                        filter: "blur(0px)", // Remove blur during animation
+                        filter: "blur(0px)", 
                       }}
-                      transition={{ duration: 1, delay: 0.5 }} // Description appears after a delay
+                      transition={{ duration: 1, delay: 0.5 }} 
                       className="animated-description"
                     >
                       {splitTextIntoWords(slide.description)}

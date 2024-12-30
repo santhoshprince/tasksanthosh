@@ -89,7 +89,7 @@
     }
 
     .marquee-container {
-        height: 60px; /* Reduce the height of the marquee container on mobile */
-        padding: 16px 0; /* Adjust padding for mobile */
+        height: 60px; 
+        padding: 16px 0; 
     }
 }

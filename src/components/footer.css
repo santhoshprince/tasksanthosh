@@ -11,23 +11,23 @@
 }
 
 .footer {
-  background-color: var(--black); /* Footer with black background */
-  color: var(--egg-white); /* Footer text color */
+  background-color: var(--black);
+  color: var(--egg-white); 
   padding-top: 20px;
   display: flex;
-  flex-wrap: wrap; /* Allow the footer content to wrap */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .footer a {
-  color: var(--egg-white); /* Default link color */
+  color: var(--egg-white);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer a:hover {
-  color: var(--prax-yellow); /* Gold color on hover */
+  color: var(--prax-yellow);
 }
 
 .btn-warning {
@@ -37,7 +37,7 @@
 }
 
 .btn-warning:hover {
-  background-color: #e5b836; /* Slightly darker gold */
+  background-color: #e5b836; 
   color: var(--egg-white);
 }
 
@@ -65,19 +65,19 @@
   }
 
   .footer a {
-    font-size: 1rem; /* Adjust link font size */
+    font-size: 1rem; 
   }
 
   .text-warning {
-    font-size: 24px; /* Smaller font size for text-warning */
+    font-size: 24px; 
   }
 
   .list-unstyled li {
-    margin-bottom: 15px; /* Adjust list item spacing */
+    margin-bottom: 15px;
   }
 
   .btn-warning {
-    font-size: 14px; /* Adjust button size for mobile/tablets */
+    font-size: 14px; 
   }
   .res-text{
     text-align: center !important;
@@ -87,19 +87,19 @@
 /* Mobile (max-width: 480px) */
 @media (max-width: 480px) {
   .footer {
-    padding: 15px 5px; /* Reduce padding for mobile */
+    padding: 15px 5px;
   }
 
   .footer a {
-    font-size: 0.9rem; /* Further reduce link font size */
+    font-size: 0.9rem; 
   }
 
   .text-warning {
-    font-size: 20px; /* Further reduce text-warning font size */
+    font-size: 20px; 
   }
 
   .list-unstyled li {
-    margin-bottom: 10px; /* Tighter list item spacing */
+    margin-bottom: 10px; 
   }
 
   .btn-warning {
@@ -124,21 +124,21 @@
 
 /* Useful Links hover animation */
 .list-unstyled a {
-  position: relative; /* Required for the pseudo-element */
-  color: var(--egg-white); /* Default link color */
-  text-decoration: none; /* Removes default underline */
+  position: relative; 
+  color: var(--egg-white);
+  text-decoration: none;
   transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .list-unstyled a::after {
-  content: ""; /* Creates the underline */
+  content: ""; 
   position: absolute;
-  bottom: -2px; /* Adjusted position for underline */
+  bottom: -2px; 
   left: 0;
-  width: 0%; /* Start with no underline */
-  height: 2px; /* Thickness of the underline */
-  background-color: var(--prax-blue); /* Gold color for the underline */
-  transition: width 0.3s ease; /* Smooth width animation */
+  width: 0%; 
+  height: 2px; 
+  background-color: var(--prax-blue); 
+  transition: width 0.3s ease; 
 }
 
 .list-unstyled a:hover::after {
@@ -151,24 +151,24 @@
 
 
 .form-control {
-  background-color: var(--egg-white); /* Set background to egg-white */
-  color: var(--black); /* Ensure text color is readable */
-  border: 1px solid var(--mid-black); /* Add a subtle border */
-  border-radius: 10px; /* Optional: Add rounded corners */
-  padding: 10px; /* Optional: Adjust padding for better spacing */
+  background-color: var(--egg-white); 
+  color: var(--black);
+  border: 1px solid var(--mid-black); 
+  border-radius: 10px; 
+  padding: 10px;
 }
 
 .form-control:focus {
-  outline: none; /* Remove default outline */
-  border-color: var(--prax-blue); /* Highlight border on focus */
-  box-shadow: 0 0 5px var(--prax-blue); /* Optional: Add glow effect */
+  outline: none; 
+  border-color: var(--prax-blue); 
+  box-shadow: 0 0 5px var(--prax-blue); 
 }
 .full-width-divider {
-  position: absolute; /* Position relative to the viewport */
-  left: 0; /* Start at the left edge */
-  right: 0; /* Extend to the right edge */
+  position: absolute; 
+  left: 0;
+  right: 0; 
   height: 2px; /* Line thickness */
-  background: var(--black); /* Gradient color */
+  background: var(--black);
  /* No margin */
-  z-index: 10; /* Ensure it appears on top */
+  z-index: 10; 
 }

@@ -21,8 +21,8 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 80vh; /* Adjusted height to 80% of the viewport height */
-  overflow: hidden; /* Ensures that any overflow content is hidden */
+  height: 80vh; 
+  overflow: hidden; 
 }
 .animated-title{
   font-size: 72px;
@@ -45,29 +45,29 @@
   width: 100% !important;
   height: 100% !important;
   overflow: hidden !important;
-  z-index: -1; /* Ensure the video stays behind content */
+  z-index: -1;
 }
 
 .video-background video {
   width: 100%;
   height: 100%;
-  object-fit: cover !important; /* Ensures the video fills the container */
+  object-fit: cover !important; 
   position: absolute !important;
   top: 0;
   left: 0;
-  z-index: -1; /* Ensures that the video stays behind the text */
-  transform: none !important; /* Ensure no scaling or movement applied */
+  z-index: -1; 
+  transform: none !important; 
 }
 
 /* Content for each carousel item */
 .carousel-content {
   text-align: center;
   color: white;
-  z-index: 1; /* Ensures the text appears above the video */
+  z-index: 1; 
   padding: 20px;
-  white-space: normal; /* Prevents text from wrapping */
-  will-change: transform, opacity; /* Optimizing for smoother animation */
-  animation: slide-in-left 5s linear !important; /* Continuously animating text */
+  white-space: normal;
+  will-change: transform, opacity; 
+  animation: slide-in-left 5s linear !important; 
   pointer-events: none;
 }
 
@@ -136,11 +136,11 @@
 /* Responsive Design - Mobile & Tablet */
 @media (max-width: 768px) {
   .carousel-container {
-    height: 60vh; /* Reduce height on smaller screens */
+    height: 60vh; 
   }
 
   .carousel-item {
-    height: 60vh; /* Adjust the height of the carousel items */
+    height: 60vh; 
   }
   .animated-title{
     font-size: 1.5rem !important
@@ -175,8 +175,8 @@
   }
 
   .animated-title {
-    font-size: 1.5rem !important; /* Further reduce font size for small screens */
-    margin-bottom: 10px; /* Adjust spacing */
+    font-size: 1.5rem !important; 
+    margin-bottom: 10px; 
   }
 
   .animated-word{
@@ -207,9 +207,9 @@
 /* Adding animation effects */
 .animated-word {
   display: inline-block;
-  font-size: 1.5rem; /* Adjust size as per your design */
-  color: #fff; /* White color for text */
+  font-size: 1.5rem; 
+  color: #fff; 
   font-weight: lighter;
-  margin-right: 5px; /* Adds space between words */
+  margin-right: 5px; 
 }
 

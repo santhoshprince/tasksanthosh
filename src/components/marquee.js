@@ -1,6 +1,5 @@
 import React from 'react';
-import Marquee from 'react-fast-marquee'; // Import the Marquee component
-import { FaStar } from 'react-icons/fa'; // Import star icon from react-icons
+import Marquee from 'react-fast-marquee';
 import './marquee.css';
 
 const MarqueeComponent = () => {
@@ -14,7 +13,7 @@ const MarqueeComponent = () => {
 
   return (
     <div className="marquee-container">
-      {/* Increase the speed to make the marquee faster */}
+   
       <Marquee gradient={true} speed={100} gradientColor='#0043F1'>
         {marqueeItems.map((item, index) => (
           <div className="marquee-item" key={index}>
