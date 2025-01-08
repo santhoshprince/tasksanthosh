@@ -1,4 +1,6 @@
 /* Primary Colors */
+
+
 :root {
   --prax-blue: #0043F1;
   --prax-yellow: #EEC643;
@@ -17,6 +19,56 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('../fonts/Poppins-Light.ttf') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('../fonts/Poppins-Medium.ttf') format('woff2');
+  font-style: normal;
+}
+
+/* Default font size (for larger screens like laptops and desktops) */
+h1 {
+  font-size: 2.3rem; /* Default font size */
+}
+.heading{
+  font-size: 2.3rem;
+  color: var(--prax-blue);
+  font-family: "Inter";
+
+}
+
+p {
+  font-size: 17px; /* Default font size */
+}
+
+/* For tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem !important; /* Adjust the font size for tablets */
+  }
+
+  p {
+    font-size: 14px; /* Adjust the font size for paragraphs on tablets */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem !important; /* Adjust the font size for mobile */
+  }
+
+  p {
+    font-size: 12px; /* Adjust the font size for paragraphs on mobile */
+  }
+}
+
 
 .carousel-container {
   position: relative;
@@ -208,8 +260,125 @@
 .animated-word {
   display: inline-block;
   font-size: 1.5rem; 
-  color: #fff; 
   font-weight: lighter;
   margin-right: 5px; 
 }
 
+.world-in-motion {
+  background-image: url('../img/About.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 600px;
+}
+
+h1 {
+  margin-top: 0; /* Remove any default margin */
+  padding-top: 0; /* Remove any padding */
+}
+
+h1 span {
+  display: inline; /* Ensure spans are inline with the h1 */
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+}
+
+.icon img {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.world-in-motion h1 {
+  position: relative; 
+  white-space: nowrap;
+  font-size: 2.5rem; 
+}
+.world-in-motion h1 span {
+  display: block; /* Makes the second span act like a block element */
+}
+
+.world-in-motion h1 span:last-child {
+  margin-top: 10px; /* Adds space between the two lines */
+}
+
+.world-in-motion h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -50px; 
+  width: 100%;
+  border-bottom: 1px solid #141414; 
+}
+
+.world-in-motion .row {
+  margin-top: 150px; /* Adjust space between heading and columns */
+}
+
+
+.text-column {
+  text-align: left; /* Keeps the text left-aligned */
+  margin-left: 80px; /* Adds a left margin to create a gap */
+}
+  
+  .image-column img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  .bg-custom {
+    background-color: var(--background); 
+    height: 100%; 
+  
+  }
+
+
+  .image-wrapper {
+    position: relative;
+    overflow: hidden; /* Hide overflow to keep the text hidden initially */
+  }
+  
+  .normal-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    height: auto; /* Ensure it takes up the full height */
+    overflow: hidden;
+  }
+  
+  /* Add background gradient to the image text container */
+  .image-text {
+    position: absolute;
+    bottom: -50px; /* Initially hidden below the image */
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    transition: bottom 0.3s ease-in-out, background-image 0.5s ease-in-out; /* Transition for smooth sliding and background change */
+    background-image: linear-gradient(to bottom, rgba(0, 67, 241, 0), #0043f1 50%); /* Initial background gradient covering 50% of the height */
+    background-size: 100% 200%; /* Adjust background size to fill more height */
+    z-index: 1; /* Ensure text stays on top */
+  }
+  
+  /* Image styling */
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Hover effect */
+  .image-wrapper:hover .image-text {
+    cursor: pointer;
+    bottom: 0; /* Bring the text up */
+    background-image: linear-gradient(to bottom, rgba(0, 67, 241, 0), #0043f1 100%); /* Gradient expands to full height on hover */
+    background-size: 100% 100%; /* Full background coverage */
+  } 
